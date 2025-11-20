@@ -135,8 +135,8 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <h1>Product & Category Management</h1>
-        <p>REST API Test Interface</p>
+        <h1>ShopEase</h1>
+        <p>Product Management System</p>
       </header>
 
       {message.text && (
@@ -144,21 +144,6 @@ function App() {
           {message.text}
         </div>
       )}
-
-      <div className="api-key-section">
-        <label htmlFor="apiKey">API Key (for write operations):</label>
-        <input
-          id="apiKey"
-          type="text"
-          value={apiKey}
-          onChange={handleApiKeyChange}
-          placeholder="test-api-key-12345"
-          className="api-key-input"
-        />
-        <small style={{display: 'block', marginTop: '5px', color: '#666'}}>
-          Default: test-api-key-12345 (already loaded)
-        </small>
-      </div>
 
       <div className="container">
         <div className="section">
