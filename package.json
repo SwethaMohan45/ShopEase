@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node server/index.js",
     "dev": "nodemon server/index.js",
-    "seed": "node server/seed.js"
+    "seed": "node server/seed.js",
+    "build": "cd client && npm install && npm run build",
+    "install-client": "cd client && npm install"
   },
   "keywords": ["rest", "api", "express", "mongodb"],
   "author": "",
